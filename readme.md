@@ -140,8 +140,12 @@ unique_products = {p["name"]: p for p in products}.values()
 
 Ensures unique product entries.
 
+Then run python whole_data.py
+Then see the g2_products_complete_data.csv
+
+
 📊 Output Format
-Name	Review Count	Rating
+Name	Review Count	Rating     Product Description       Review Summary
 
 Example:
 
