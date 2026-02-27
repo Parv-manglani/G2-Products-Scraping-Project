@@ -74,7 +74,7 @@ g2-marketing-automation-scraper/
 ⚙️ Installation
 
 1️⃣ Clone the Repository
-git clone https://github.com/yourusername/g2-marketing-automation-scraper.git
+git clone https://github.com/Parv-manglani/G2-Products-Scraping-Project.git
 cd g2-marketing-automation-scraper
 2️⃣ Create Virtual Environment
 python -m venv venv
