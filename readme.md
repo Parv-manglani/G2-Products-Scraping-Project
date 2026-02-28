@@ -88,14 +88,19 @@ venv\Scripts\activate
 Mac/Linux
 
 source venv/bin/activate
+
 3️⃣ Install Dependencies
+
 pip install playwright
+
 playwright install
 
 🚀 Running the Scraper
 
 Step 1: Start Chrome in Debug Mode
+
 🪟 Windows
+
 "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\chrome-debug"
 
 If Chrome is in PATH:
