@@ -1,5 +1,7 @@
 🚀 G2 Marketing Automation Scraper
+
 Playwright-Based JavaScript-Aware Web Scraper (Python)
+
 📌 Overview
 
 This project is a JavaScript-rendered web scraper built using Playwright (Python) to extract product data from the G2 Marketing Automation category.
@@ -65,18 +67,16 @@ Accurate element selection
 
 Better reliability
 
-🏗️ Project Structure
-g2-marketing-automation-scraper/
-│
-├── scraper.py
-├── g2_products_full_data.csv
-└── README.md
 ⚙️ Installation
 
 1️⃣ Clone the Repository
+
 git clone https://github.com/Parv-manglani/G2-Products-Scraping-Project.git
+
 cd g2-marketing-automation-scraper
+
 2️⃣ Create Virtual Environment
+
 python -m venv venv
 
 Activate it:
@@ -107,12 +107,21 @@ If Chrome is in PATH:
 
 chrome --remote-debugging-port=9222 --user-data-dir="C:\chrome-debug"
 🍎 Mac
+
 open -a "Google Chrome" --args --remote-debugging-port=9222 --user-data-dir="/tmp/chrome-debug"
+
 Step 2: Run the Script
-python scraper.py
+
+python main.py
+
+python whole_data.py
+
 🔍 How It Works
+
 1️⃣ Connects to Existing Chrome Session
+
 browser = p.chromium.connect_over_cdp("http://localhost:9222")
+
 2️⃣ Pagination System
 
 Automatically loops through pages:
@@ -140,22 +149,28 @@ Prevents crashes due to missing elements.
 Removes commas and parentheses from review count:
 
 re.sub(r"[(),]", "", review_text)
+
 5️⃣ Deduplication
+
 unique_products = {p["name"]: p for p in products}.values()
 
 Ensures unique product entries.
 
 Then run python whole_data.py
+
 Then see the g2_products_complete_data.csv
 
 
 📊 Output Format
+
 Name	Review Count	Rating     Product Description       Review Summary
 
 Example:
 
 HubSpot Marketing Hub, 10543, 4.4
+
 Marketo Engage, 2321, 4.2
+
 🔥 Key Features
 
 ✔️ JavaScript-aware scraping
